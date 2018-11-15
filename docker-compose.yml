@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  blog:
+    build: ./app/
+    ports:
+      - '8000:8000'
+    volumes:
+      - ./app:/code
